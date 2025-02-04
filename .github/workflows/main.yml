@@ -1,0 +1,6 @@
+nombre:  Cargar  sitio web 
+
+en: 
+  push: 
+    ramas: 
+    -  trabajos principales : implementar: se ejecuta en: ubuntu-latest pasos: - nombre: Verificar usos: acciones/checkout@v1 - nombre: Configurar credenciales de AWS usos: aws-actions/configure-aws-credentials@v1 con: aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }} aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }} aws-region: us-west-2 - nombre: Implementar sitio estático en depósito S3 ejecutar: aws s3 sync ./public/ s3://test-web-page-btq --delete
