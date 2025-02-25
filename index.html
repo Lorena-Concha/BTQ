@@ -36,7 +36,7 @@
                                     <a href="index.html">Home</a>
                                 </li>
                                 <li class="">
-                                      <!--   <a href="#casos-de-exito">Casos de éxito</a> -->
+                                    <!--   <a href="#casos-de-exito">Casos de éxito</a> -->
                                 </li>
                                 <li class="">
                                     <a href="nosotros.html">Nosotros</a>
@@ -75,7 +75,7 @@
             </div>
             <div class="d-flex flex-column ">
                 <div class="cd-title align-items-start mt-3">Consultoría Digital</div>
-                <div class="cd-text h-70px" >
+                <div class="cd-text h-70px">
                     En un entorno donde la tecnología avanza rápidamente, contar con el apoyo adecuado
                     es esencial para alcanzar el éxito.
                     En Bubble Tech Quality, brindamos consultoría digital personalizada para desarrollar soluciones
@@ -83,138 +83,386 @@
                     expertos trabajará contigo para convertir tus ideas en resultados concretos y efectivos.
                     ¿Tienes un proyecto en mente? Permítenos acompañarte en el proceso y diseñar juntos el camino
                     hacia tus objetivos digitales.
-
                 </div>
             </div>
-
         </div>
     </div>
 
-    
-        <!-- Nuestras Tecnologías -->
+    <div class="d-flex flex-row ">
+        <div class="d-flex flex-column mart-10 div-home mr-5">
+            <div class="claim">Nuestros<br>
+                <span>Proyectos</span>
+            </div>
+            <div class="bajada"></div>
+        </div>
 
-        <div class="bloque-clientes">
-            <div class="cd-title2 align-items-start mt-3">Nuestras Tecnologías</div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="carrusel">
-                        <div class="slider">
-                            <div class="slide-track">
-                                <div class="slide  text-center">
-                                    <p class="text-light">AWS Lambda</p>
-                                    <img src="assets/images/AWS-Lamda.svg" alt="">
-                                </div>
-                                <div class="slide text-center">
-                                    <p class="text-light">AWS Cognito</p>
-                                    <img src="assets/images/AWS-Cognito.svg" alt="">
-                                </div>
-                                <div class="slide  text-center">
-                                    <p class="text-light text-center">AWS</p>
-                                    <img src="assets/images/Aws.svg" alt="">
-                                </div>
-                                <div class="slide  text-center">
-                                    <p class="text-light text-center">Java</p>
-                                    <img src="assets/images/Java.svg" alt="">
-                                </div>
-                                <div class="slide  text-center">
-                                    <p class="text-light text-center">NodeJs</p>
-                                    <img src="assets/images/NodeJs.svg" alt="">
-                                </div>
-                                <div class="slide  text-center">
-                                    <p class="text-light text-center">Angular</p>
-                                    <img src="assets/images/Angular.svg" alt="">
-                                </div>
-                                <div class="slide  text-center">
-                                    <p class="text-light text-center">React</p>
-                                    <img src="assets/images/React.svg" alt="">
-                                </div>
-                                <div class="slide">
-                                    <p class="text-light text-center">Azure</p>
-                                    <img src="assets/images/Azure.svg" alt="">
-                                </div>
-                                <div class="slide">
-                                    <p class="text-light text-center">GCP</p>
-                                    <img src="assets/images/GCp.svg" alt="">
-                                </div>
-                                <div class="slide">
-                                    <p class="text-light text-center">Postman</p>
-                                    <img src="assets/images/Postman.svg" alt="">
-                                </div>
-                                <div class="slide">
-                                    <p class="text-light text-center">Python</p>
-                                    <img src="assets/images/Python.svg" alt="">
-                                </div>
-                               
-                                <div class="slide  text-center">
-                                    <p class="text-light text-center">AWS Lambda</p>
-                                    <img src="assets/images/AWS-Lamda.svg" alt="">
-                                </div>
-                                <div class="slide text-center">
-                                    <p class="text-light">AWS Cognito</p>
-                                    <img src="assets/images/AWS-Cognito.svg" alt="">
-                                </div>
-                                <div class="slide">
-                                    <p class="text-light text-center">AWS</p>
-                                    <img src="assets/images/Aws.svg" alt="">
-                                </div>
-                                <div class="slide">
-                                    <p class="text-light text-center">Java</p>
-                                    <img src="assets/images/Java.svg" alt="">
-                                </div>
-                                <div class="slide">
-                                    <p class="text-light text-center">NodeJs</p>
-                                    <img src="assets/images/NodeJs.svg" alt="">
-                                </div>
-                                <div class="slide">
-                                    <p class="text-light text-center">Angular</p>
-                                    <img src="assets/images/Angular.svg" alt="">
-                                </div>
-                                <div class="slide">
-                                    <p class="text-light text-center">React</p>
-                                    <img src="assets/images/React.svg" alt="">
-                                </div>
-                                <div class="slide">
-                                    <p class="text-light text-center">Azure</p>
-                                    <img src="assets/images/Azure.svg" alt="">
-                                </div>
-                                <div class="slide">
-                                    <p class="text-light text-center">GCP</p>
-                                    <img src="assets/images/GCp.svg" alt="">
-                                </div>
-                                <div class="slide">
-                                    <p class="text-light text-center">Postman</p>
-                                    <img src="assets/images/Postman.svg" alt="">
-                                </div>
-                                <div class="slide">
-                                    <p class="text-light text-center">Python</p>
-                                    <img src="assets/images/Python.svg" alt="">
-                                </div>
-                                
+        <style>
+            .modal-hover:hover {
+                background-color: #d3d3d3 !important;
+            }
+        </style>
 
-                             
-
-
-                            </div>
-                        </div>
+        <!-- Agrega los modales -->
+        <div class="modal fade" id="mineriaModal" tabindex="-1" aria-labelledby="mineriaModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content modal-hover" style="background-color: #b0b1b5; color: #362c79;">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="mineriaModalLabel"
+                            style="font-family: 'League Spartan', sans-serif !important;">
+                            <img src="assets/images/icons/black/world.svg" alt="">
+                            Optimización del Manejo de Información Geolocalizada
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body"
+                        style="text-align: justify; color: #241432; font-family: 'League Spartan', sans-serif !important; padding: 30px;">
+                        En el sector de la minería, hemos desarrollado soluciones avanzadas para la gestión de
+                        información geolocalizada, tanto en entornos online como offline. Estas herramientas permiten a
+                        las empresas del sector optimizar la recolección y el análisis de datos geoespaciales,
+                        esenciales para la exploración y explotación de recursos. Utilizando tecnologías de mapeo en
+                        tiempo real, nuestros sistemas ofrecen una visión detallada del terreno, permitiendo a los
+                        equipos de trabajo tomar decisiones informadas y con mayor precisión, incluso en áreas con
+                        conectividad limitada.
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Contacto -->
-        <div class="row" id="contactanos">
-            <div class="col-lg-12 text-center">
-                <h3 class="color2">
-                    <div class="claimForm">Contactanos para mayor información:</div>
-                </h3>
+        <!-- Modal para Favourite Secondary -->
+        <div class="modal fade" id="favouriteModal" tabindex="-1" aria-labelledby="favouriteModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content" style="background-color: #b0b1b5; color: #362c79;">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="favouriteModalLabel"
+                            style="font-family: 'League Spartan', sans-serif !important;">
+                            <img src="assets/images/icons/black/settings.svg" alt="">
+                            Automatización de Procesos Administrativos
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body"
+                        style="text-align: justify; color: #241432; font-family: 'League Spartan', sans-serif !important; padding: 30px;">
+                        Para el sector automotriz, hemos implementado soluciones de automatización de procesos para
+                        áreas clave como contabilidad y recursos humanos. A través de la integración de sistemas
+                        inteligentes y herramientas de RPA (automatización de procesos robóticos), hemos optimizado
+                        tareas repetitivas y manuales, reduciendo significativamente el tiempo y el margen de error en
+                        actividades administrativas. Esto ha permitido a nuestros clientes centrarse en funciones
+                        estratégicas, mejorando la eficiencia operativa y garantizando un mayor cumplimiento de las
+                        normativas internas y externas.</div>
+                </div>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-lg-12">
-                <iframe src="assets/pages/formulario_contacto.html" height="" width="" title=""></iframe>
+        <!-- Modal para Check Circle -->
+        <div class="modal fade" id="checkCircleModal" tabindex="-1" aria-labelledby="checkCircleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content" style="background-color: #b0b1b5; color: #362c79;">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="checkCircleModalLabel"
+                            style="font-family: 'League Spartan', sans-serif !important;">
+                            <img src="assets/images/icons/black/lock.svg" alt="">
+                            Soluciones Personalizadas de Manejo de Datos y Ciberseguridad
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body"
+                        style="text-align: justify; color: #241432; font-family: 'League Spartan', sans-serif !important; padding: 30px;">
+                        En el sector bancario, hemos desarrollado soluciones a medida que responden a necesidades
+                        específicas de manejo de datos y protección de la información. Estas soluciones están diseñadas
+                        para mejorar la eficiencia de los procesos bancarios y optimizar el análisis de grandes
+                        volúmenes de datos, siempre bajo un marco robusto de ciberseguridad. Implementamos sistemas que
+                        garantizan la confidencialidad, integridad y disponibilidad de la información, adaptándonos a
+                        los requisitos normativos locales e internacionales. Con nuestras soluciones, los bancos pueden
+                        ofrecer servicios más seguros y rápidos a sus clientes, asegurando la protección ante amenazas
+                        cibernéticas emergentes.</div>
+                </div>
             </div>
         </div>
+
+        <!-- Tres modales adicionales de ejemplo -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModal1Label"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content" style="background-color: #b0b1b5; color: #362c79;">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModal1Label"
+                            style="font-family: 'League Spartan', sans-serif !important;">
+                            <img src="assets/images/icons/black/shoppingCart.svg" alt="">
+                            Desarrollo de Plataformas de Comercio Electrónico
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body"
+                        style="text-align: justify; color: #241432; font-family: 'League Spartan', sans-serif !important; padding: 30px;">
+                        En el área comercial, hemos creado plataformas de comercio electrónico personalizadas,
+                        incluyendo avanzados carritos de compra con funcionalidades específicas para cada tipo de
+                        negocio. Estas soluciones están diseñadas para ofrecer una experiencia de usuario fluida y
+                        segura, integrando sistemas de pago, gestión de inventarios y personalización de productos en
+                        tiempo real. Además, implementamos tecnologías de análisis de comportamiento del usuario para
+                        optimizar la conversión y aumentar las ventas, mejorando la competitividad de nuestros clientes
+                        en el mercado digital.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModal2Label"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content" style="background-color: #b0b1b5; color: #362c79;">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModal2Label"
+                            style="font-family: 'League Spartan', sans-serif !important;">
+                            <img src="assets/images/icons/black/hospital.svg" alt="">
+                            Integración de Sistemas para la Gestión de Pacientes y Expedientes Médicos Electrónicos
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body"
+                        style="text-align: justify; color: #241432; font-family: 'League Spartan', sans-serif !important; padding: 30px;">
+                        En el sector de la salud, hemos desarrollado soluciones integrales para la gestión de pacientes
+                        y expedientes médicos electrónicos. Nuestros sistemas permiten a los profesionales médicos
+                        acceder y actualizar en tiempo real la información clínica de sus pacientes, mejorando la
+                        eficiencia y reduciendo los errores médicos. La integración de tecnologías de telemedicina
+                        también ha facilitado consultas a distancia, brindando atención médica en zonas rurales o de
+                        difícil acceso. Además, implementamos sistemas de alertas para el monitoreo continuo de la salud
+                        de los pacientes, garantizando una atención oportuna y personalizada. Nuestra solución está
+                        diseñada para cumplir con los más altos estándares de protección de datos personales y
+                        cumplimiento de normativas de salud, asegurando la privacidad y seguridad de la información
+                        sensible.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModal3Label"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content" style="background-color: #b0b1b5; color: #362c79;">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModal3Label"
+                            style="font-family: 'League Spartan', sans-serif !important;">
+                            <img src="assets/images/icons/black/localShipping.svg" alt="">
+
+                            Logística: Optimización del Flujo de Carga y Rutas de Distribución
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body"
+                        style="text-align: justify; color: #241432; font-family: 'League Spartan', sans-serif !important; padding: 30px;">
+
+                        En el ámbito de la logística, hemos implementado plataformas inteligentes para la optimización
+                        de rutas de distribución y la gestión del flujo de carga. Utilizando algoritmos de optimización
+                        de rutas, nuestros sistemas analizan múltiples variables como el tráfico en tiempo real,
+                        condiciones climáticas y capacidades de los vehículos para maximizar la eficiencia en el
+                        transporte. Además, contamos con soluciones de seguimiento de carga y gestión de inventarios que
+                        permiten a las empresas tener visibilidad total sobre el movimiento de mercancías, mejorando los
+                        tiempos de entrega y reduciendo los costos operativos. Esta solución también integra
+                        herramientas de análisis predictivo para anticipar posibles problemas y asegurar una
+                        distribución más eficiente.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botones organizados en dos filas de tres -->
+        <div class="container text-center mt-4">
+            <div class="row justify-content-center g-3">
+                <div class="col-md-4">
+                    <button type="button"
+                        class="btn btn-outline-secondary d-flex flex-column align-items-center justify-content-center text-center py-3 w-100"
+                        data-bs-toggle="modal" data-bs-target="#mineriaModal">
+                        <img src="assets/images/icons/white/world.svg" alt="" class="mb-2" style="width: 30px;">
+                        <span>Minería</span>
+                    </button>
+                </div>
+                <div class="col-md-4">
+                    <button type="button"
+                        class="btn btn-outline-secondary d-flex flex-column align-items-center justify-content-center text-center py-3 w-100"
+                        data-bs-toggle="modal" data-bs-target="#favouriteModal">
+                        <img src="assets/images/icons/white/settings.svg" alt="" class="mb-2" style="width: 30px;">
+                        <span>Automotriz</span>
+                    </button>
+                </div>
+                <div class="col-md-4">
+                    <button type="button"
+                        class="btn btn-outline-secondary d-flex flex-column align-items-center justify-content-center text-center py-3 w-100"
+                        data-bs-toggle="modal" data-bs-target="#checkCircleModal">
+                        <img src="assets/images/icons/white/lock.svg" alt="" class="mb-2" style="width: 30px;">
+                        <span>Banca</span>
+                    </button>
+                </div>
+            </div>
+            <div class="row justify-content-center g-3 mt-2">
+                <div class="col-md-4">
+                    <button type="button"
+                        class="btn btn-outline-secondary d-flex flex-column align-items-center justify-content-center text-center py-3 w-100"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                        <img src="assets/images/icons/white/shoppingCart.svg" alt="" class="mb-2" style="width: 30px;">
+                        <span>Comercial</span>
+                    </button>
+                </div>
+                <div class="col-md-4">
+                    <button type="button"
+                        class="btn btn-outline-secondary d-flex flex-column align-items-center justify-content-center text-center py-3 w-100"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                        <img src="assets/images/icons/white/hospital.svg" alt="" class="mb-2" style="width: 30px;">
+                        <span>Salud</span>
+                    </button>
+                </div>
+                <div class="col-md-4">
+                    <button type="button"
+                        class="btn btn-outline-secondary d-flex flex-column align-items-center justify-content-center text-center py-3 w-100"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                        <img src="assets/images/icons/white/localShipping.svg" alt="" class="mb-2" style="width: 30px;">
+                        <span>Logística</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Agrega Bootstrap JS si aún no está incluido -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    </div>
+
+
+
+    <!-- Nuestras Tecnologías -->
+
+    <div class="bloque-clientes">
+        <div class="cd-title2 align-items-start mt-3">Nuestras Tecnologías</div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="carrusel">
+                    <div class="slider">
+                        <div class="slide-track">
+                            <div class="slide  text-center">
+                                <p class="text-light">AWS Lambda</p>
+                                <img src="assets/images/AWS-Lamda.svg" alt="">
+                            </div>
+                            <div class="slide text-center">
+                                <p class="text-light">AWS Cognito</p>
+                                <img src="assets/images/AWS-Cognito.svg" alt="">
+                            </div>
+                            <div class="slide  text-center">
+                                <p class="text-light text-center">AWS</p>
+                                <img src="assets/images/Aws.svg" alt="">
+                            </div>
+                            <div class="slide  text-center">
+                                <p class="text-light text-center">Java</p>
+                                <img src="assets/images/Java.svg" alt="">
+                            </div>
+                            <div class="slide  text-center">
+                                <p class="text-light text-center">NodeJs</p>
+                                <img src="assets/images/NodeJs.svg" alt="">
+                            </div>
+                            <div class="slide  text-center">
+                                <p class="text-light text-center">Angular</p>
+                                <img src="assets/images/Angular.svg" alt="">
+                            </div>
+                            <div class="slide  text-center">
+                                <p class="text-light text-center">React</p>
+                                <img src="assets/images/React.svg" alt="">
+                            </div>
+                            <div class="slide">
+                                <p class="text-light text-center">Azure</p>
+                                <img src="assets/images/Azure.svg" alt="">
+                            </div>
+                            <div class="slide">
+                                <p class="text-light text-center">GCP</p>
+                                <img src="assets/images/GCp.svg" alt="">
+                            </div>
+                            <div class="slide">
+                                <p class="text-light text-center">Postman</p>
+                                <img src="assets/images/Postman.svg" alt="">
+                            </div>
+                            <div class="slide">
+                                <p class="text-light text-center">Python</p>
+                                <img src="assets/images/Python.svg" alt="">
+                            </div>
+
+                            <div class="slide  text-center">
+                                <p class="text-light text-center">AWS Lambda</p>
+                                <img src="assets/images/AWS-Lamda.svg" alt="">
+                            </div>
+                            <div class="slide text-center">
+                                <p class="text-light">AWS Cognito</p>
+                                <img src="assets/images/AWS-Cognito.svg" alt="">
+                            </div>
+                            <div class="slide">
+                                <p class="text-light text-center">AWS</p>
+                                <img src="assets/images/Aws.svg" alt="">
+                            </div>
+                            <div class="slide">
+                                <p class="text-light text-center">Java</p>
+                                <img src="assets/images/Java.svg" alt="">
+                            </div>
+                            <div class="slide">
+                                <p class="text-light text-center">NodeJs</p>
+                                <img src="assets/images/NodeJs.svg" alt="">
+                            </div>
+                            <div class="slide">
+                                <p class="text-light text-center">Angular</p>
+                                <img src="assets/images/Angular.svg" alt="">
+                            </div>
+                            <div class="slide">
+                                <p class="text-light text-center">React</p>
+                                <img src="assets/images/React.svg" alt="">
+                            </div>
+                            <div class="slide">
+                                <p class="text-light text-center">Azure</p>
+                                <img src="assets/images/Azure.svg" alt="">
+                            </div>
+                            <div class="slide">
+                                <p class="text-light text-center">GCP</p>
+                                <img src="assets/images/GCp.svg" alt="">
+                            </div>
+                            <div class="slide">
+                                <p class="text-light text-center">Postman</p>
+                                <img src="assets/images/Postman.svg" alt="">
+                            </div>
+                            <div class="slide">
+                                <p class="text-light text-center">Python</p>
+                                <img src="assets/images/Python.svg" alt="">
+                            </div>
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Contacto -->
+    <div class="row" id="contactanos">
+        <div class="col-lg-12 text-center">
+            <h3 class="color2">
+                <div class="claimForm">Contactanos para mayor información:</div>
+            </h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <iframe src="assets/pages/formulario_contacto.html" height="" width="" title=""></iframe>
+        </div>
+    </div>
     </div>
     </div>
 
