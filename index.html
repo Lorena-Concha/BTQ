@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <!-- Estilos -->
-  <link href="assets/css/btq-style.css?v=2" rel="stylesheet">
+  <link href="assets/css/btq-style.css?v=3" rel="stylesheet">
   <link href="assets/css/transversales.css?v=2" rel="stylesheet">
 
   <title>BTQ - Bubble Tech Quality</title>
@@ -29,14 +29,14 @@
   <header class="bloque-header" id="header">
     <div class="container">
       <div class="header-inner">
-        <a href="index.html" class="logo">
+        <a href="#home" class="logo">
           <img height="44" src="assets/Pictures/LogoTextoPurpura.svg" alt="Logo BTQ">
         </a>
         <nav class="nav-desktop" id="DesktopMenu">
           <ul>
-            <li class="active"><a href="index.html">Home</a></li>
+            <li class="active"><a href="#home">Home</a></li>
             <li><a href="#servicios">Servicios</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
             <li><a href="#contactanos">Contacto</a></li>
           </ul>
         </nav>
@@ -50,9 +50,9 @@
     <!-- Mobile nav -->
     <nav class="nav-mobile" id="mobileMenu">
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="#home">Home</a></li>
         <li><a href="#servicios">Servicios</a></li>
-        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
         <li><a href="#contactanos">Contacto</a></li>
       </ul>
     </nav>
@@ -220,12 +220,84 @@
     </div>
   </section>
 
+  <!-- ═══════════════════════════════════════ NOSOTROS ═══ -->
+  <section class="section-quienes" id="nosotros">
+    <div class="container">
+      <div class="quienes-grid reveal">
+        <div>
+          <span class="section-label">Nuestra historia</span>
+          <h2 class="section-title">BTQ — Bubble Tech Quality</h2>
+          <p class="section-text">
+            BTQ nace con la convicción de que las empresas —independientemente de su tamaño— merecen
+            acceso a tecnología de calidad. Somos una consultora de tecnología especializada en diseñar,
+            construir y optimizar soluciones digitales que generan impacto real en los negocios.
+          </p>
+          <p class="section-text mt-3">
+            Trabajamos con agilidad y cercanía: entendemos tu contexto, proponemos soluciones prácticas
+            y las ejecutamos con estándares de primer nivel. Nuestros proyectos van desde plataformas web
+            hasta arquitecturas cloud complejas con componentes de inteligencia artificial.
+          </p>
+        </div>
+        <div class="quienes-stats">
+          <div class="stat-item reveal">
+            <span class="stat-num">+50</span>
+            <span class="stat-desc">Proyectos entregados</span>
+          </div>
+          <div class="stat-item reveal">
+            <span class="stat-num">10+</span>
+            <span class="stat-desc">Clientes activos</span>
+          </div>
+          <div class="stat-item reveal">
+            <span class="stat-num">3</span>
+            <span class="stat-desc">Países de operación</span>
+          </div>
+          <div class="stat-item reveal">
+            <span class="stat-num">100%</span>
+            <span class="stat-desc">Enfoque en calidad</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ VALORES ═══ -->
+  <section class="section-valores">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Lo que nos define</span>
+        <h2 class="section-title">Nuestros Valores</h2>
+      </div>
+      <div class="valores-grid">
+        <div class="valor-card reveal">
+          <div class="valor-num">01</div>
+          <h3>Calidad sin concesiones</h3>
+          <p>Cada línea de código y cada entregable pasan por estándares exigentes. La calidad no es opcional, es nuestro nombre.</p>
+        </div>
+        <div class="valor-card reveal">
+          <div class="valor-num">02</div>
+          <h3>Cercanía real</h3>
+          <p>No somos un proveedor anónimo. Nos involucramos con el negocio del cliente y trabajamos como parte de su equipo.</p>
+        </div>
+        <div class="valor-card reveal">
+          <div class="valor-num">03</div>
+          <h3>Agilidad y ejecución</h3>
+          <p>Valoramos la velocidad sin sacrificar la calidad. Entregamos resultados iterativos que generan valor desde el primer sprint.</p>
+        </div>
+        <div class="valor-card reveal">
+          <div class="valor-num">04</div>
+          <h3>Innovación continua</h3>
+          <p>La tecnología no se detiene y nosotros tampoco. Incorporamos IA, automatización y nuevas herramientas de manera responsable.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ═══════════════════════════════════════ TECNOLOGÍAS ═══ -->
   <section class="section-tech">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-label">Stack tecnológico</span>
-        <h2 class="section-title">Nuestras Tecnologías</h2>
+        <span class="section-label light">Stack tecnológico</span>
+        <h2 class="section-title light">Nuestras Tecnologías</h2>
       </div>
     </div>
     <div class="carrusel">
@@ -254,43 +326,6 @@
           <div class="slide text-center"><p>GCP</p><img src="assets/images/GCp.svg" alt="GCP"></div>
           <div class="slide text-center"><p>Python</p><img src="assets/images/Python.svg" alt="Python"></div>
           <div class="slide text-center"><p>Postman</p><img src="assets/images/Postman.svg" alt="Postman"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════ CLIENTES ═══ -->
-  <section class="section-clientes">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">Confiaron en nosotros</span>
-        <h2 class="section-title">Empresas que confían en BTQ</h2>
-      </div>
-    </div>
-    <div class="carrusel carrusel-clientes">
-      <div class="slider">
-        <div class="slide-track">
-          <div class="slide"><img src="assets/images/CK-BancoBice.svg" alt="Banco Bice"></div>
-          <div class="slide"><img src="assets/images/CK-BCI.svg" alt="BCI"></div>
-          <div class="slide"><img src="assets/images/CK-Deloitte.svg" alt="Deloitte"></div>
-          <div class="slide"><img src="assets/images/CK-Anglo-american.svg" alt="Anglo American"></div>
-          <div class="slide"><img src="assets/images/CK-Ecomsur.svg" alt="Ecomsur"></div>
-          <div class="slide"><img src="assets/images/CK-Ionix.svg" alt="Ionix"></div>
-          <div class="slide"><img src="assets/images/CK-Kiwox.svg" alt="Kiwox"></div>
-          <div class="slide"><img src="assets/images/CK-Intellect.svg" alt="Intellect"></div>
-          <div class="slide"><img src="assets/images/CK-Amicar.svg" alt="Amicar"></div>
-          <div class="slide"><img src="assets/images/CK-MK.svg" alt="MK"></div>
-          <!-- Duplicado -->
-          <div class="slide"><img src="assets/images/CK-BancoBice.svg" alt="Banco Bice"></div>
-          <div class="slide"><img src="assets/images/CK-BCI.svg" alt="BCI"></div>
-          <div class="slide"><img src="assets/images/CK-Deloitte.svg" alt="Deloitte"></div>
-          <div class="slide"><img src="assets/images/CK-Anglo-american.svg" alt="Anglo American"></div>
-          <div class="slide"><img src="assets/images/CK-Ecomsur.svg" alt="Ecomsur"></div>
-          <div class="slide"><img src="assets/images/CK-Ionix.svg" alt="Ionix"></div>
-          <div class="slide"><img src="assets/images/CK-Kiwox.svg" alt="Kiwox"></div>
-          <div class="slide"><img src="assets/images/CK-Intellect.svg" alt="Intellect"></div>
-          <div class="slide"><img src="assets/images/CK-Amicar.svg" alt="Amicar"></div>
-          <div class="slide"><img src="assets/images/CK-MK.svg" alt="MK"></div>
         </div>
       </div>
     </div>
@@ -368,7 +403,7 @@
   <footer class="site-footer">
     <div class="container">
       <div class="footer-inner">
-        <a href="index.html">
+        <a href="#home">
           <img height="44" src="assets/Pictures/LogoTextoPurpura.svg" alt="Logo BTQ">
         </a>
         <div class="footer-center">
@@ -376,9 +411,9 @@
           <a href="mailto:contacto@btq.cl" class="footer-email">contacto@btq.cl</a>
         </div>
         <div class="footer-links">
-          <a href="index.html">Home</a>
+          <a href="#home">Home</a>
           <a href="#servicios">Servicios</a>
-          <a href="nosotros.html">Nosotros</a>
+          <a href="#nosotros">Nosotros</a>
           <a href="#contactanos">Contacto</a>
         </div>
       </div>
