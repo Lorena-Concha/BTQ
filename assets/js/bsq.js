@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const feedback = document.getElementById('formFeedback');
 
   if (form && feedback) {
-    form.addEventListener('submit', function (e) {
+    form.addEventListener('submit', async function (e) {
       e.preventDefault();
 
       // Validación básica
@@ -97,17 +97,34 @@ document.addEventListener('DOMContentLoaded', function () {
         return;
       }
 
-      // Simulación de envío (reemplazar con fetch real cuando haya backend)
       const btn = form.querySelector('button[type="submit"]');
+      const originalText = btn.textContent;
       btn.disabled = true;
       btn.textContent = 'Enviando...';
 
-      setTimeout(function () {
-        showFeedback('success', '¡Mensaje enviado! Te responderemos en menos de 24 horas.');
-        form.reset();
+      const formData = new FormData(form);
+      formData.append('access_key', '17141806-46cc-484e-9c4b-05e713039473');
+      formData.append('subject', 'Nuevo contacto desde el sitio web de BTQ');
+
+      try {
+        const response = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          body: formData
+        });
+        const data = await response.json();
+
+        if (response.ok && data.success) {
+          showFeedback('success', '¡Mensaje enviado! Te responderemos en menos de 24 horas.');
+          form.reset();
+        } else {
+          showFeedback('error', 'No pudimos enviar tu mensaje. Por favor intenta de nuevo.');
+        }
+      } catch (error) {
+        showFeedback('error', 'No pudimos enviar tu mensaje. Revisa tu conexión e intenta de nuevo.');
+      } finally {
         btn.disabled = false;
-        btn.textContent = 'Enviar mensaje';
-      }, 1200);
+        btn.textContent = originalText;
+      }
     });
 
     function showFeedback(type, message) {
